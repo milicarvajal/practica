@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <div class="acciones">
+        <button id="btn-tema" aria-label="Cambiar tema">Tema</button>
+        <button id="btn-tipografia" aria-label="Cambiar tipografía">Letra</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Formulario de Contacto</h1>
+    <form id="formulario" novalidate>
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" placeholder="Tu nombre" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="nombre@dominio.com" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" rows="4" placeholder="Escribí tu mensaje..." required></textarea>
+
+      <button class="btn" type="submit">Enviar</button>
+      <p id="resultado" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <small>© 2025 — Hecho por Milagros Carvajal</small>
+  </footer>
+</body>
+</html>
